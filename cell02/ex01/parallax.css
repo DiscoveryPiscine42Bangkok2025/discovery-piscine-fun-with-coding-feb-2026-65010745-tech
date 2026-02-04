@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #777;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-1 {
+    background-image: url('https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg');
+}
+
+.img-2 {
+    background-image: url('https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg');
+}
+
+.content-block {
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.caption {
+    text-align: center;
+    color: #000;
+}
+
+.border {
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
