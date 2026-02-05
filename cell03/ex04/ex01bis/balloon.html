@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balloon Exercise (jQuery)</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        #balloon { width: 200px; height: 200px; background-color: red; border-radius: 50%; cursor: pointer; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="balloon"></div>
+
+    <script>
+        $(document).ready(function() {
+            let size = 200;
+            let colorIndex = 0;
+            const colors = ['red', 'green', 'blue'];
+            const $balloon = $('#balloon');
+
+            $balloon.on('click', function() {
+                size += 10;
+                if (size > 420) size = 200;
+                colorIndex = (colorIndex + 1) % colors.length;
+                update();
+            });
+
+            $balloon.on('mouseleave', function() {
+                if (size > 200) size -= 5;
+                colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+                update();
+            });
+
+            function update() {
+                $balloon.css({
+                    'width': size + 'px',
+                    'height': size + 'px',
+                    'background-color': colors[colorIndex]
+                });
+            }
+        });
+    </script>
+</body>
+</html>

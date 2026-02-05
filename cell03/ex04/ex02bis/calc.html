@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SNCF Calculator (jQuery)</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; }
+        input, select { margin: 5px; padding: 10px; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="left">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right">
+        <input type="submit" value="Try me!" id="submit">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#submit').on('click', function() {
+                const l = $('#left').val();
+                const r = $('#right').val();
+                const op = $('#operator').val();
+
+                // Regex to check for positive integers
+                if (!/^\d+$/.test(l) || !/^\d+$/.test(r)) {
+                    alert('Error :(');
+                    return;
+                }
+
+                const n1 = parseInt(l);
+                const n2 = parseInt(r);
+
+                if ((op === '/' || op === '%') && n2 === 0) {
+                    console.log("It's over 9000!");
+                    alert("It's over 9000!");
+                    return;
+                }
+
+                let res;
+                switch(op) {
+                    case '+': res = n1 + n2; break;
+                    case '-': res = n1 - n2; break;
+                    case '*': res = n1 * n2; break;
+                    case '/': res = n1 / n2; break;
+                    case '%': res = n1 % n2; break;
+                }
+                console.log(res);
+                alert(res);
+            });
+
+            setInterval(() => alert('Please, use me...'), 30000);
+        });
+    </script>
+</body>
+</html>
