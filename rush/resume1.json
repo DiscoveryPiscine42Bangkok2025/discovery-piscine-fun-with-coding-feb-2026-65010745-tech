@@ -1,0 +1,15 @@
+{
+  "profile": {
+    "name": "John Doe",
+    "job_title": "Full Stack Developer",
+    "photo_url": "https://i.pravatar.cc/300?img=11"
+  },
+  "experience_skills": {
+    "experience": "Lead Developer at 42 Projects. Specialized in C and Shell scripting.",
+    "skills": ["C", "Shell", "Bootstrap", "Git"]
+  },
+  "contact": {
+    "Email": "jdoe@student.42.fr",
+    "GitHub": "github.com/jdoe"
+  }
+}

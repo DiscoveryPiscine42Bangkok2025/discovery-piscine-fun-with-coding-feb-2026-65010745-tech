@@ -1,0 +1,15 @@
+{
+  "profile": {
+    "name": "Jane Smith",
+    "job_title": "UI/UX Designer",
+    "photo_url": "https://i.pravatar.cc/300?img=5"
+  },
+  "experience_skills": {
+    "experience": "Senior Designer at CreativeStudio. Expert in responsive layouts.",
+    "skills": ["Figma", "CSS", "UI/UX", "JavaScript"]
+  },
+  "contact": {
+    "email": "jane@student.42.fr",
+    "portfolio": "behance.net/janesmith"
+  }
+}

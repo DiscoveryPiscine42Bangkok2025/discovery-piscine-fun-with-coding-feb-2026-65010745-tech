@@ -1,0 +1,207 @@
+:root {
+    --primary-color: #0d6efd;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+}
+
+/* Snap scrolling for distinct sections */
+html { scroll-behavior: smooth; }
+
+body { 
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin-left: 100px; 
+    font-family: 'Inter', sans-serif;
+}
+
+/* Floating Sidebar Nav */
+.icon-nav-group {
+    position: fixed;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(33, 37, 41, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 20px 12px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.nav-link-icon {
+    color: #888;
+    font-size: 1.6rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.nav-link-icon:hover {
+    color: #fff;
+    background: var(--primary-color);
+    transform: scale(1.15);
+}
+
+/* Glassmorphism Section Style */
+section { 
+    min-height: 100vh; 
+    padding: 100px 0; 
+    display: flex; 
+    align-items: center;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo { 
+    width: 220px; 
+    height: 220px; 
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
+    object-fit: cover; 
+    border: 8px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+    animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+.badge-skill {
+    background: #212529;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.badge-skill:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.section-title {
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    body { margin-left: 0; }
+    .icon-nav-group {
+        bottom: 20px;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        width: fit-content;
+        height: auto;
+        padding: 10px 20px;
+    }
+}
+
+/* --- Home Page Specific Styles --- */
+
+.home-body {
+    margin-left: 0; /* Remove sidebar margin on home page */
+    overflow: hidden; /* Prevent scroll on landing page */
+}
+
+.bg-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-glass-card {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.btn-home-custom {
+    border: 2px solid white;
+    color: white;
+    padding: 12px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background: transparent;
+    text-decoration: none;
+}
+
+.btn-home-custom:hover {
+    background: white;
+    color: #212529;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#summary-display {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-text {
+    font-size: 1.25rem;
+    transition: all 0.4s ease;
+}
+
+/* Ensure resume body still has margin but home doesn't */
+body:not(.home-body) {
+    margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+    body:not(.home-body) { margin-left: 0; }
+    .home-glass-card { padding: 2rem 1rem; border-radius: 1.5rem; }
+}
