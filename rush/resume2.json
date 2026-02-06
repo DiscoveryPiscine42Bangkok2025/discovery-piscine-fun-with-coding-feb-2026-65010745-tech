@@ -1,40 +1,71 @@
 {
   "profile": {
-    "name": "John Doe",
-    "job_title": "Full Stack Developer",
-    "photo_url": "https://i.pravatar.cc/300?img=11",
-    "introduction": "Passionate developer with expertise in modern web technologies."
+    "name": "พิทักษ์พงษ์ สาวงศ์นาม",
+    "job_title": "วิศวกรรมซอฟแวร์",
+    "photo_url": "images/pisawong.jpg",
+    "introduction": "สวัสดีครับ! ผมเป็นนักศึกษาชั้นปีที่ 4 จาก สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (KMITL) ผมมีความสนใจอย่างแรงกล้าในด้านกระบวนการพัฒนาซอฟต์แวร์ (Software Development Processes) โดยเฉพาะในส่วนของ Backend Development, Machine Learning และ Deep Learning ผมรักที่จะพัฒนาตัวเองในทุกๆ วัน และมักจะมองหาความท้าทายรวมถึงโอกาสใหม่ๆ เพื่อยกระดับทักษะของตัวเองอยู่เสมอครับ"
   },
   "experience_skills": {
     "experience": [
       {
-        "title": "Lead Developer at 42 Projects",
-        "description": "Specialized in C and Shell scripting."
+        "title": "ฝ่ายเอกสาร (Documentation Department), Robot Club KMITL (2023-2024)",
+        "description": "จัดเตรียมและดำเนินการเอกสารโครงการต่างๆ รวมถึงการขอใช้ยานพาหนะ การเปิดและปิดโครงการ การสรุปงบประมาณ และประสานงานด้านธุรการสำหรับกิจกรรมต่างๆ ของชมรม"
       },
       {
-        "title": "Junior Web Developer",
-        "description": "Built responsive templates using Bootstrap."
+        "title": "ติวเตอร์พาร์ทไทม์ (Tutor), Go Future Academy (2024-2025)",
+        "description": "ออกแบบตารางเรียนและสอนพื้นฐานการเขียนโปรแกรม (Coding) ให้แก่เด็กนักเรียนอายุระหว่าง 7–12 ปี"
+      },
+      {
+        "title": "นิสิตฝึกงานและสหกิจศึกษา (Internship + Cooperative Program), Dataxet Limited (2025)",
+        "description": "วิจัยวิธีการค้นหา (Search Methodologies) เพื่อปรับปรุงการดึงข้อมูลตามความต้องการของผู้ใช้ (User-intent Retrieval) พร้อมทั้งฝึกฝนโมเดล Classification และ Object Detection"
+      },
+      {
+        "title": "นิสิตฝึกงาน (Internship), Celestica Thailand (2025-ปัจจุบัน)",
+        "description": "ได้รับมอบหมายให้พัฒนาตัวต้นแบบ (Proof of Concept) สำหรับระบบ High-speed Streaming Pipeline และสนับสนุนการพัฒนาด้าน Firmware"
       }
     ],
     "skills": [
-      "C",
+      "Python",
+      "Dart",
+      "C/C++",
+      "C#",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Java",
+      "Golang",
+      "MATLAB",
+      "Flutter",
+      "ROS2",
+      "TensorFlow",
+      "Torch",
+      "Keras",
+      "Spring Boot",
+      "React",
+      "Docker",
+      "Pandas",
+      "Numpy",
+      "Matplotlib",
+      "OpenCV",
+      "Microsoft Excel",
+      "Kubernetes",
+      "Git",
       "Shell",
-      "Bootstrap",
-      "Git"
+      "Bootstrap"
     ]
   },
   "contact": {
-    "Email": {
+    "เบอร์โทรศัพท์": {
+      "icon": "bi-telephone",
+      "value": "063-0340862"
+    },
+    "อีเมลล์": {
       "icon": "bi-envelope-at",
-      "value": "jdoe@student.42.fr"
+      "value": "pithakpong0862@gmail.com"
     },
-    "GitHub": {
+    "กิตฮับ": {
       "icon": "bi-github",
-      "value": "github.com/jdoe"
-    },
-    "LinkedIn": {
-      "icon": "bi-linkedin",
-      "value": "linkedin.com/in/jdoe"
+      "value": "github.com/pithakpong"
     }
   }
 }

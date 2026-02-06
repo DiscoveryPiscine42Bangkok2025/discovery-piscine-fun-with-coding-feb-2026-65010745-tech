@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piscine Discovery - Home</title>
+    <title>Piscine Discovery - Rush</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,18 +11,18 @@
     <div class="bg-hero">
         <div class="container">
             <div class="home-glass-card mx-auto">
-                <h1 class="display-3 fw-bold mb-4">Piscine Discovery</h1>
-                <p class="lead mb-5 text-light">Welcome to our showcase. Explore our resumes below.</p>
+                <h1 class="display-3 fw-bold mb-4">แฟ้มสะสมผลงานของพวกเรา</h1>
+                <p class="lead mb-5 text-light">สวัสดีครับอยากพบ candidates ที่เก่งกาจหาไม่ได้จากที่ไหนอีกแล้วนอกจากพวกเราสองคน</p>
                 
                 <div class="d-flex justify-content-center flex-wrap gap-4">
                     <a href="resume.html?user=1" class="btn btn-home-custom" 
-                       onmouseover="showSummary('1')" onmouseout="clearSummary()">VIEW CV 1</a>
+                       onmouseover="showSummary('1')" onmouseout="clearSummary()">pisawong</a>
                     <a href="resume.html?user=2" class="btn btn-home-custom" 
-                       onmouseover="showSummary('2')" onmouseout="clearSummary()">VIEW CV 2</a>
+                       onmouseover="showSummary('2')" onmouseout="clearSummary()">sumthana</a>
                 </div>
 
                 <div id="summary-display" class="mt-5">
-                    <p id="summary-content" class="summary-text text-muted">Hover over a button to see a summary.</p>
+                    <p id="summary-content" class="summary-text text-muted">เอาเมาส์มา Hover เพื่อดูรายละเอียดโดยสรุปเลย</p>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
 
     <script>
         const summaries = {
-            '1': '<strong>Profile 1:</strong> Expert Full Stack Developer specializing in C and Shell scripting.',
+            '1': '<strong>PISAWONG :</strong> ผมคือผู้เชี่ยวชาญในศาสตร์ software engineer การเป็น engineer คือการแก้ปัญหาหายึดติดกับเครื่องมือไม่ การเป็น engineer คือการเรียบเรียงความต้องการและหาแนวทางในการแก้ปัญหา ถ้าหากอยากรู้จักกับผมแล้วล่ะก็ "คลิก"',
             '2': '<strong>Profile 2:</strong> Creative UI/UX Designer focused on Bootstrap and responsive web design.'
         };
 
@@ -42,7 +42,7 @@
 
         function clearSummary() {
             const box = document.getElementById('summary-content');
-            box.innerHTML = 'Hover over a button to see a summary.';
+            box.innerHTML = 'เอาเมาส์มา Hover เพื่อดูรายละเอียดโดยสรุปเลย';
             box.className = 'summary-text text-muted';
         }
     </script>
