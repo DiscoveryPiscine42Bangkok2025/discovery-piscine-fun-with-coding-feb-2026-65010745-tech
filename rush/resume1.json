@@ -2,14 +2,39 @@
   "profile": {
     "name": "John Doe",
     "job_title": "Full Stack Developer",
-    "photo_url": "https://i.pravatar.cc/300?img=11"
+    "photo_url": "https://i.pravatar.cc/300?img=11",
+    "introduction": "Passionate developer with expertise in modern web technologies."
   },
   "experience_skills": {
-    "experience": "Lead Developer at 42 Projects. Specialized in C and Shell scripting.",
-    "skills": ["C", "Shell", "Bootstrap", "Git"]
+    "experience": [
+      {
+        "title": "Lead Developer at 42 Projects",
+        "description": "Specialized in C and Shell scripting."
+      },
+      {
+        "title": "Junior Web Developer",
+        "description": "Built responsive templates using Bootstrap."
+      }
+    ],
+    "skills": [
+      "C",
+      "Shell",
+      "Bootstrap",
+      "Git"
+    ]
   },
   "contact": {
-    "Email": "jdoe@student.42.fr",
-    "GitHub": "github.com/jdoe"
+    "Email": {
+      "icon": "bi-envelope-at",
+      "value": "jdoe@student.42.fr"
+    },
+    "GitHub": {
+      "icon": "bi-github",
+      "value": "github.com/jdoe"
+    },
+    "LinkedIn": {
+      "icon": "bi-linkedin",
+      "value": "linkedin.com/in/jdoe"
+    }
   }
 }

@@ -16,9 +16,9 @@
                 
                 <div class="d-flex justify-content-center flex-wrap gap-4">
                     <a href="resume.html?user=1" class="btn btn-home-custom" 
-                       onmouseover="showSummary('1')" onmouseout="clearSummary()">View CV 1</a>
+                       onmouseover="showSummary('1')" onmouseout="clearSummary()">VIEW CV 1</a>
                     <a href="resume.html?user=2" class="btn btn-home-custom" 
-                       onmouseover="showSummary('2')" onmouseout="clearSummary()">View CV 2</a>
+                       onmouseover="showSummary('2')" onmouseout="clearSummary()">VIEW CV 2</a>
                 </div>
 
                 <div id="summary-display" class="mt-5">
@@ -37,8 +37,6 @@
         function showSummary(id) {
             const box = document.getElementById('summary-content');
             box.innerHTML = summaries[id];
-            box.style.opacity = '1';
-            box.style.transform = 'translateY(0)';
             box.className = 'summary-text text-white';
         }
 
