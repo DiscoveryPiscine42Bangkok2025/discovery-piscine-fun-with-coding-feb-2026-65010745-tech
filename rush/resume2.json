@@ -1,71 +1,68 @@
 {
   "profile": {
-    "name": "พิทักษ์พงษ์ สาวงศ์นาม",
-    "job_title": "วิศวกรรมซอฟแวร์",
-    "photo_url": "images/pisawong.jpg",
-    "introduction": "สวัสดีครับ! ผมเป็นนักศึกษาชั้นปีที่ 4 จาก สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (KMITL) ผมมีความสนใจอย่างแรงกล้าในด้านกระบวนการพัฒนาซอฟต์แวร์ (Software Development Processes) โดยเฉพาะในส่วนของ Backend Development, Machine Learning และ Deep Learning ผมรักที่จะพัฒนาตัวเองในทุกๆ วัน และมักจะมองหาความท้าทายรวมถึงโอกาสใหม่ๆ เพื่อยกระดับทักษะของตัวเองอยู่เสมอครับ"
+    "name": "สุมนต์รัตน์ ธนะ",
+    "job_title": "วิศวกรรมไอโอที",
+    "photo_url": "images/sumthana.jpg",
+    "introduction": "สวัสดีค่ะ ดิฉันเป็นนักศึกษาที่สนใจด้าน Internet of Things และ Embedded Systems มีความชอบในการสร้างโปรเจกต์ที่ผสมผสานฮาร์ดแวร์และซอฟต์แวร์ เช่น Arduino และ ESP32 กำลังพัฒนาทักษะด้าน C, Python และ Linux อย่างต่อเนื่อง รักการเรียนรู้สิ่งใหม่ๆ และต้องการสร้างผลงานที่สามารถใช้งานได้จริงและต่อยอดช่วยเหลือผู้คนในอนาคตค่ะ"
   },
   "experience_skills": {
     "experience": [
       {
-        "title": "ฝ่ายเอกสาร (Documentation Department), Robot Club KMITL (2023-2024)",
-        "description": "จัดเตรียมและดำเนินการเอกสารโครงการต่างๆ รวมถึงการขอใช้ยานพาหนะ การเปิดและปิดโครงการ การสรุปงบประมาณ และประสานงานด้านธุรการสำหรับกิจกรรมต่างๆ ของชมรม"
+        "title": "IoT & Embedded Systems Developer (Student Projects)",
+        "description": "ออกแบบและพัฒนาระบบ IoT โดยใช้ Arduino และ ESP32 ตั้งแต่ระดับวงจรจนถึงซอฟต์แวร์ ควบคุมอุปกรณ์ผ่านเซนเซอร์ วิเคราะห์ข้อมูลแบบเรียลไทม์ และสร้างต้นแบบฮาร์ดแวร์ที่เชื่อมต่อกับแอปพลิเคชัน พร้อมฝึกกระบวนการ Debug และ System Integration"
       },
       {
-        "title": "ติวเตอร์พาร์ทไทม์ (Tutor), Go Future Academy (2024-2025)",
-        "description": "ออกแบบตารางเรียนและสอนพื้นฐานการเขียนโปรแกรม (Coding) ให้แก่เด็กนักเรียนอายุระหว่าง 7–12 ปี"
+        "title": "Programming Tutor & Technical Mentor",
+        "description": "ถ่ายทอดความรู้ด้านการเขียนโปรแกรมให้ผู้เรียนหลายช่วงวัย สร้างหลักสูตร Coding เบื้องต้น ฝึกแนวคิด Problem Solving และ Computational Thinking พร้อมพัฒนาทักษะการสื่อสารเชิงเทคนิค"
       },
       {
-        "title": "นิสิตฝึกงานและสหกิจศึกษา (Internship + Cooperative Program), Dataxet Limited (2025)",
-        "description": "วิจัยวิธีการค้นหา (Search Methodologies) เพื่อปรับปรุงการดึงข้อมูลตามความต้องการของผู้ใช้ (User-intent Retrieval) พร้อมทั้งฝึกฝนโมเดล Classification และ Object Detection"
+        "title": "Software & Computer Vision Intern",
+        "description": "ทำงานร่วมกับทีมพัฒนาในการวิจัยวิธีการค้นหาข้อมูล (Search Optimization) ฝึกสร้างโมเดล Classification และ Object Detection รวมถึงเข้าใจ Pipeline ของ Machine Learning ตั้งแต่เตรียมข้อมูลจนถึงการทดสอบโมเดล"
       },
       {
-        "title": "นิสิตฝึกงาน (Internship), Celestica Thailand (2025-ปัจจุบัน)",
-        "description": "ได้รับมอบหมายให้พัฒนาตัวต้นแบบ (Proof of Concept) สำหรับระบบ High-speed Streaming Pipeline และสนับสนุนการพัฒนาด้าน Firmware"
+        "title": "Embedded & Firmware Engineering Intern",
+        "description": "พัฒนา Proof of Concept สำหรับระบบ Embedded ความเร็วสูง มีส่วนร่วมใน Firmware Development และ Hardware–Software Co-design พร้อมเรียนรู้การทำงานในสภาพแวดล้อมอุตสาหกรรมจริง"
       }
     ],
     "skills": [
-      "Python",
-      "Dart",
       "C/C++",
-      "C#",
-      "Javascript",
+      "Python",
+      "Shell",
+      "Git",
       "HTML",
       "CSS",
-      "Java",
-      "Golang",
-      "MATLAB",
-      "Flutter",
-      "ROS2",
-      "TensorFlow",
-      "Torch",
-      "Keras",
-      "Spring Boot",
-      "React",
-      "Docker",
-      "Pandas",
-      "Numpy",
-      "Matplotlib",
+      "JavaScript",
+      "Bootstrap",
+      "ESP32",
+      "PCB Design (Basic)",
+      "Circuit Prototyping",
+      "Arduino",
+      "Basic Electronics",
+      "IoT Prototyping",
       "OpenCV",
-      "Microsoft Excel",
-      "Kubernetes",
-      "Git",
-      "Shell",
-      "Bootstrap"
+      "ROS2",
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "Docker",
+      "Linux",
+      "Problem Solving",
+      "Debugging",
+      "Self Learning"
     ]
   },
   "contact": {
     "เบอร์โทรศัพท์": {
       "icon": "bi-telephone",
-      "value": "063-0340862"
+      "value": "095-7254589"
     },
     "อีเมลล์": {
       "icon": "bi-envelope-at",
-      "value": "pithakpong0862@gmail.com"
+      "value": "Sumonratthana@gmail.com"
     },
     "กิตฮับ": {
       "icon": "bi-github",
-      "value": "github.com/pithakpong"
+      "value": "github.com/Maygummy16"
     }
   }
 }
